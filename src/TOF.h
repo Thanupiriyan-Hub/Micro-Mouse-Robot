@@ -38,7 +38,7 @@ void TOFSetUp(){
   tof1.setAddress(tofAddress1);
   // Start continuous measurement for the first sensor
   tof1.startContinuous();
-
+/*
   digitalWrite(GPIO2, HIGH);
   delay(10);
   tof2.init();
@@ -47,7 +47,7 @@ void TOFSetUp(){
   tof2.setAddress(tofAddress2);
   // Start continuous measurement for the second sensor
   tof2.startContinuous();
-/*
+*/
   digitalWrite(GPIO3, HIGH);
   delay(10);
   tof3.init();
@@ -55,7 +55,7 @@ void TOFSetUp(){
   tof3.setAddress(tofAddress3);
   // Start continuous measurement for the first sensor
   tof4.startContinuous();
-
+/*
   digitalWrite(GPIO4, HIGH);
   delay(10);
   tof4.init();
@@ -63,33 +63,33 @@ void TOFSetUp(){
   tof4.setAddress(tofAddress4);
   // Start continuous measurement for the second sensor
   tof4.startContinuous();
-
+*/
   digitalWrite(GPIO5, HIGH);
   delay(10);
   tof5.init();
   // Set the address for the second sensor
   tof5.setAddress(tofAddress5);
   // Start continuous measurement for the second sensor
-  tof5.startContinuous();*/
+  tof5.startContinuous();
 }
 
 void TOFRead(){
   tof[0] = tof1.readRangeSingleMillimeters();
-  tof[1] = tof2.readRangeSingleMillimeters();
-  /*tof[2] = tof3.readRangeSingleMillimeters();
-  tof[3] = tof4.readRangeSingleMillimeters();
-  tof[4] = tof5.readRangeSingleMillimeters();*/
+ // tof[1] = tof2.readRangeSingleMillimeters();
+  tof[2] = tof3.readRangeSingleMillimeters();
+ // tof[3] = tof4.readRangeSingleMillimeters();
+  tof[4] = tof5.readRangeSingleMillimeters();
 }
 
 void TOFPrint(){
   mySerial.print("TOF0 : ");
   mySerial.println(tof[0]);
-  mySerial.print("TOF1 : ");
-  mySerial.println(tof[1]);
-  /*mySerial.print("TOF2 : ");
+  //mySerial.print("TOF1 : ");
+  //mySerial.println(tof[1]);
+  mySerial.print("TOF2 : ");
   mySerial.println(tof[2]);
-  mySerial.print("TOF3 : ");
-  mySerial.println(tof[3]);
+ // mySerial.print("TOF3 : ");
+ // mySerial.println(tof[3]);
   mySerial.print("TOF4 : ");
-  mySerial.println(tof[4]);*/
+  mySerial.println(tof[4]);
 }
