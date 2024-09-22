@@ -7,6 +7,7 @@ MPU6050 mpu6050(Wire);
 void gyrosetup() {
   mpu6050.begin();
   mpu6050.calcGyroOffsets(true);
+  delay(500); 
 }
 
 void gyroloop() {
@@ -21,8 +22,8 @@ void gyroloop() {
             // Optionally, you can add other actions here when the condition is met
         }
 
-        mySerial.print("angle : ");
-        mySerial.println(mpu6050.getAngleZ());
-        mySerial.println(angleDiff);
+        Serial1.print("angle : ");
+        Serial1.println(mpu6050.getAngleZ());
+        Serial1.println(angleDiff);
 
 }

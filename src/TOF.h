@@ -16,7 +16,7 @@ VL53L0X tof3;
 VL53L0X tof4;
 VL53L0X tof5;
 
-float tof[5];
+int tof[5];
 
 void TOFSetUp(){
   pinMode(GPIO1, OUTPUT);

@@ -1,12 +1,11 @@
 #include <Arduino.h>
 
-HardwareSerial mySerial(PA10, PA9);
+HardwaremySerial mySerial(PA10, PA9);
 
 //Original libraries 
-//#include <Wire.h>
+#include <Wire.h>
 #include <VL53L0X.h>
 #include <MPU6050_tockn.h>
-
 
 
 //Local Head files
@@ -15,38 +14,43 @@ HardwareSerial mySerial(PA10, PA9);
 #include "TOF.h"
 //#include "MGyro.h"
 #include "Gyro.h"
+#include "Encorder.h"
+#include "EncoderTest.h"
 
 #define buzzer PB11
 
 void setup() {
   motorDiver();
-  motorInterrupt();
+  //motorInterrupt();
   stbyHigh();
-  mySerial.begin(9600);
-  Wire.begin();
+ mySerial.begin(9600);
+  Encordersetup();
+
+  //Wire.begin();
   //Wire.setClock(400000);
-  TOFSetUp();
+  //TOFSetUp();
   gyrosetup();
 
   pinMode(buzzer, OUTPUT);
- // attachInterrupt(digitalPinToInterrupt(PB12), countLeftOut1, RISING);
- // attachInterrupt(digitalPinToInterrupt(PB13), countLeftOut1, RISING);
- // attachInterrupt(digitalPinToInterrupt(PB14), countRightOut1, RISING);
- // attachInterrupt(digitalPinToInterrupt(PB15), countRightOut1, RISING);
+  //attachInterrupt(digitalPinToInterrupt(ENCLA), countLeftOut1, RISING);
+  //attachInterrupt(digitalPinToInterrupt(ENCLB), countLeftOut1, RISING);
+  //attachInterrupt(digitalPinToInterrupt(ENCRA), countRightOut1, RISING);
+  //attachInterrupt(digitalPinToInterrupt(ENCRB), countRightOut1, RISING);
   //Gyrosetup();
   }
 
 void loop() {
-  TOFRead();
-  TOFPrint();
+  //TOFRead();
+  //TOFPrint();
   //Gyroloop();
   gyroloop();
   //buzz();
   //delay(300);
    //forwardBase();
    //turnRight();
-   //rightForwardBase();
-   reverseBase();
+   rightForwardBase();
+   //reverseBase();
+   Encorderloop();
 }
 void buzz()
 {

@@ -6,11 +6,6 @@
 #define BIN2 PB0
 #define PWMB PB9
 
-#define leftOut1 PB12   //interrupt pins of motors 
-#define leftOut2 PB13          
-#define rightOut1 PB14
-#define rightOut2 PB15
-
 void motorDiver(){
     pinMode(PWMA, OUTPUT);
     pinMode(AIN2, OUTPUT);
@@ -22,16 +17,8 @@ void motorDiver(){
 
 }
 
-void motorInterrupt()
-{
-    pinMode(leftOut1, INPUT);
-    pinMode(leftOut2, INPUT);
-    pinMode(rightOut1, INPUT);
-    pinMode(rightOut2, INPUT);
-}
-
-int leftBase =210;
-int rightBase = 210;
+int leftBase =200;
+int rightBase = 200;
 
 int leftPwm ;
 int rightPwm ;
