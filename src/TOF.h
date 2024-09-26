@@ -82,14 +82,14 @@ void TOFRead(){
 }
 
 void TOFPrint(){
-  mySerial.print("TOF0 : ");
-  mySerial.println(tof[0]);
-  //mySerial.print("TOF1 : ");
-  //mySerial.println(tof[1]);
-  mySerial.print("TOF2 : ");
-  mySerial.println(tof[2]);
- // mySerial.print("TOF3 : ");
- // mySerial.println(tof[3]);
-  mySerial.print("TOF4 : ");
-  mySerial.println(tof[4]);
+  Serial1.print("TOF0 : ");
+  Serial1.println(tof[0]);
+  //Serial1.print("TOF1 : ");
+  //Serial1.println(tof[1]);
+  Serial1.print("TOF2 : ");
+  Serial1.println(tof[2]);
+ // Serial1.print("TOF3 : ");
+ // Serial1.println(tof[3]);
+  Serial1.print("TOF4 : ");
+  Serial1.println(tof[4]);
 }

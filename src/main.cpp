@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-HardwaremySerial mySerial(PA10, PA9);
+HardwareSerial Serial1(PA10, PA9);
 
 //Original libraries 
 #include <Wire.h>
@@ -23,12 +23,12 @@ void setup() {
   motorDiver();
   //motorInterrupt();
   stbyHigh();
- mySerial.begin(9600);
+  Serial1.begin(9600);
   Encordersetup();
 
-  //Wire.begin();
+  Wire.begin();
   //Wire.setClock(400000);
-  //TOFSetUp();
+  TOFSetUp();
   gyrosetup();
 
   pinMode(buzzer, OUTPUT);
@@ -40,8 +40,8 @@ void setup() {
   }
 
 void loop() {
-  //TOFRead();
-  //TOFPrint();
+    TOFRead();
+    TOFPrint();
   //Gyroloop();
   gyroloop();
   //buzz();
