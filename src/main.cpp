@@ -9,14 +9,13 @@ HardwareSerial Serial1(PA10, PA9);
 
 
 //Local Head files
-//#include "mpu6500.h"
+
 #include "Motor.h"
 #include "TOF.h"
-#include "PID.h"
-//#include "MGyro.h"
 #include "Gyro.h"
 #include "Encorder.h"
 #include "EncoderTest.h"
+#include "Turns.h"
 
 #define buzzer PB11
 
@@ -43,16 +42,16 @@ void setup() {
 void loop() {
     TOFRead();
     TOFPrint();
-  //Gyroloop();
-  gyroloop();
+    gyroloop();
   //buzz();
   //delay(300);
    //forwardBase();
    //turnRight();
    //rightForwardBase();
    //reverseBase();
-   Encorderloop();
-   //pidControlMotors();
+   //Encorderloop();
+  //  turnNinetyRight();
+   LeftAboutTurn();
 }
 void buzz()
 {
