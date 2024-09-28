@@ -19,7 +19,6 @@ void motorDiver(){
 
 int leftBase =200;
 int rightBase = 200;
-
 int leftPwm ;
 int rightPwm ;
 
@@ -99,8 +98,8 @@ void rightReverseBase()
 
 void writePwm()
 {
-    analogWrite(PWMA, leftPwm);
-    analogWrite(PWMB, rightPwm);
+    analogWrite(PWMA, leftBase+leftPwm);
+    analogWrite(PWMB, rightBase+rightPwm);
 }
 
 void writeBasePwm()
@@ -115,6 +114,10 @@ void forward()
     leftForward();
     rightForward();
     writePwm();
+    // Serial1.print("Motor left pwm");
+    // Serial1.print(leftBase+leftPwm);
+    // Serial1.print("  Motor right pwm");
+    // Serial1.println(rightBase+rightPwm);
 }
 
 void reverse()

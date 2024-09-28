@@ -16,6 +16,7 @@ HardwareSerial Serial1(PA10, PA9);
 #include "Encorder.h"
 #include "EncoderTest.h"
 #include "Turns.h"
+#include "PID.h"
 
 #define buzzer PB11
 
@@ -38,11 +39,19 @@ void setup() {
   //attachInterrupt(digitalPinToInterrupt(ENCRB), countRightOut1, RISING);
   //Gyrosetup();
   }
-
+void buzz()
+{
+    digitalWrite(buzzer, HIGH);
+    delay(200);
+    digitalWrite(buzzer, LOW);
+    delay(200);
+}
 void loop() {
+  //buzz();
     TOFRead();
     TOFPrint();
-    gyroloop();
+   // TOFInitialize();
+    // gyroloop();
   //buzz();
   //delay(300);
    //forwardBase();
@@ -51,14 +60,11 @@ void loop() {
    //reverseBase();
    //Encorderloop();
   //  turnNinetyRight();
-   LeftAboutTurn();
+   //LeftAboutTurn();
+    // Encorderloop();
+    // readBluetoothPID();
+    // pidControlMotors();
 }
-void buzz()
-{
-    digitalWrite(buzzer, HIGH);
-    delay(200);
-    digitalWrite(buzzer, LOW);
-    delay(200);
-}
+
 
 //
