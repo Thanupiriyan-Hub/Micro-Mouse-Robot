@@ -17,3 +17,12 @@ This repository contains the code and documentation for the **Maze-Solving Micro
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/maze-solving-micromouse-2024.git
+Build and upload the project to your STM32 board using PlatformIO.
+
+## Components
+
+- STM32 Microcontroller
+- TOF Sensors for distance measurement
+- Gyroscope for orientation tracking
+- Contributions
+- Contributions are welcome. Please create a pull request with your updates or improvements.
