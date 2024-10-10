@@ -1,4 +1,4 @@
-2024 Maze-Solving Micro Mouse Project
+# 2024 Maze-Solving Micro Mouse Project
 
 Overview
 This repository contains the code and documentation for the Maze-Solving Micro Mouse Robot project developed for a robotics competition in 2024. The project implements a maze-solving algorithm using flood-fill techniques for autonomous navigation through a maze.
