@@ -39,9 +39,10 @@ The following components were used in the robot's design and build:
 - 🔊 **Buzzer** (for signaling status or errors)
 
 ## Team
-- **Thanupiriyan Sannithy** (Team Leader)  
+- **Thanupiriyan S.** (Team Leader)  
 - **Tharsan I.**  
-- **Kalainilavan I.**
+- **Bharkavasharama K.**
+- **Aphiram.A**
 
 ## Features
 - Flood-fill-based autonomous maze-solving
