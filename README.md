@@ -1,6 +1,6 @@
 # Maze-Solving Micro Mouse Project
 
-![Intro](./Lmages/Robofest.jfif)
+![Intro](./Images/Robofest.jfif)
 
 ## Overview
 This repository contains the code and documentation for the **Maze-Solving Micro Mouse Robot** project developed for a robotics competition in 2024. The robot uses a flood-fill algorithm to navigate a maze autonomously and determine the shortest path to the goal.
