@@ -16,7 +16,7 @@ The competition was based on the classic **Micro Mouse challenge**, where the ta
 Each team had to develop their own algorithms, hardware integration, and path-planning logic to efficiently guide their robot from the start position to the goal (center) and back.
 
 ### Maze Layout Example:
-![Maze Layout](./images/1616.jpg) 
+![Maze Layout](./Images/1616.jpg) 
 
 ## Flood-Fill Algorithm in Action
 To solve the maze, we used a **flood-fill algorithm**, which plays a critical role in path planning. Here’s how it works in our robot:
