@@ -17,6 +17,7 @@ Each team had to develop their own algorithms, hardware integration, and path-pl
 
 ### Maze Layout Example:
 ![Maze Layout](./Images/1616.png) 
+![Robot on Maze](./Images/maze.webp) 
 
 ## Flood-Fill Algorithm in Action
 To solve the maze, we used a **flood-fill algorithm**, which plays a critical role in path planning. Here’s how it works in our robot:
