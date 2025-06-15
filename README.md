@@ -1,5 +1,7 @@
 # Maze-Solving Micro Mouse Project
 
+![Intro](./images/Robofest.jfif)
+
 ## Overview
 This repository contains the code and documentation for the **Maze-Solving Micro Mouse Robot** project developed for a robotics competition in 2024. The robot uses a flood-fill algorithm to navigate a maze autonomously and determine the shortest path to the goal.
 
@@ -14,7 +16,7 @@ The competition was based on the classic **Micro Mouse challenge**, where the ta
 Each team had to develop their own algorithms, hardware integration, and path-planning logic to efficiently guide their robot from the start position to the goal (center) and back.
 
 ### Maze Layout Example:
-![Maze Layout](./images/maze-competition-example.jpg) <!-- Replace with actual image path -->
+![Maze Layout](./images/maze-competition-example.jpg) 
 
 ## Flood-Fill Algorithm in Action
 To solve the maze, we used a **flood-fill algorithm**, which plays a critical role in path planning. Here’s how it works in our robot:
