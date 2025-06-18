@@ -1,7 +1,9 @@
 # Maze-Solving Micro Mouse Project
 
+![Intro](./Images/Robofest.jfif)
+
 ## Overview
-This repository contains the code and documentation for the **Maze-Solving Micro Mouse Robot** project developed for a robotics competition in 2024. The robot uses a flood-fill algorithm to navigate a maze autonomously and determine the shortest path to the goal.
+This repository contains the code and documentation for the **Maze-Solving Micro Mouse Robot** project developed for a robotics competition in 2022. The robot uses a flood-fill algorithm to navigate a maze autonomously and determine the shortest path to the goal.
 
 > ⚠️ **Important Note**:  
 > The flood-fill algorithm logic used in this competition is **not included** in this repository.  
@@ -14,7 +16,8 @@ The competition was based on the classic **Micro Mouse challenge**, where the ta
 Each team had to develop their own algorithms, hardware integration, and path-planning logic to efficiently guide their robot from the start position to the goal (center) and back.
 
 ### Maze Layout Example:
-![Maze Layout](./images/maze-competition-example.jpg) <!-- Replace with actual image path -->
+![Maze Layout](./Images/1616.png) 
+![Robot on Maze](./Images/maze.webp) 
 
 ## Flood-Fill Algorithm in Action
 To solve the maze, we used a **flood-fill algorithm**, which plays a critical role in path planning. Here’s how it works in our robot:
@@ -33,13 +36,16 @@ The following components were used in the robot's design and build:
 - 🔧 **N20 Gear Motors** with Magnetic Encoders (300 RPM)
 - 📦 **STM32F103C8T6 "Blue Pill" Microcontroller**
 - 🧭 **Gyroscope Sensor**
-- 📏 **5x VL53L0X Time-of-Flight (TOF) Distance Sensors**
+- 📏 **VL53L0X Time-of-Flight (TOF) Distance Sensors**
+- 📏 **Ultrasonic Distance Sensors**
 - ⚙️ **2x D-Hole Wheels** (32 mm diameter)
 - ⚪ **1x Castor Ball Wheel** (free-rotating for stability)
 - 🔊 **Buzzer** (for signaling status or errors)
 
 ## Team
-- **Thanupiriyan S.** (Team Leader)  
+
+![Team Mates at Finals](./Images/f3d1b6b7-51be-4f62-a5cb-77070add3f34.jpg) 
+- **Thanupiriyan S.**  
 - **Tharsan I.**  
 - **Bharkavasharama K.**
 - **Aphiram.A**
@@ -53,4 +59,4 @@ The following components were used in the robot's design and build:
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/maze-solving-micromouse-2024.git
+   git clone https://github.com/Thanupiriyan-Hub/maze-solving-micromouse-2024.git
