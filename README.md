@@ -44,7 +44,7 @@ The following components were used in the robot's design and build:
 ## Team
 
 ![Team Mates at Finals](./Images/f3d1b6b7-51be-4f62-a5cb-77070add3f34.jpg) 
-- **Thanupiriyan S.** (Team Leader)  
+- **Thanupiriyan S.**  
 - **Tharsan I.**  
 - **Bharkavasharama K.**
 - **Aphiram.A**
@@ -58,4 +58,4 @@ The following components were used in the robot's design and build:
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/maze-solving-micromouse-2024.git
+   git clone https://github.com/Thanupiriyan-Hub/maze-solving-micromouse-2024.git
