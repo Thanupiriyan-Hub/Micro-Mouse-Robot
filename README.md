@@ -36,7 +36,8 @@ The following components were used in the robot's design and build:
 - 🔧 **N20 Gear Motors** with Magnetic Encoders (300 RPM)
 - 📦 **STM32F103C8T6 "Blue Pill" Microcontroller**
 - 🧭 **Gyroscope Sensor**
-- 📏 **5x VL53L0X Time-of-Flight (TOF) Distance Sensors**
+- 📏 **VL53L0X Time-of-Flight (TOF) Distance Sensors**
+- 📏 **Ultrasonic Distance Sensors**
 - ⚙️ **2x D-Hole Wheels** (32 mm diameter)
 - ⚪ **1x Castor Ball Wheel** (free-rotating for stability)
 - 🔊 **Buzzer** (for signaling status or errors)
