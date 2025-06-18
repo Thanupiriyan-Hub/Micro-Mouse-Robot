@@ -42,6 +42,8 @@ The following components were used in the robot's design and build:
 - 🔊 **Buzzer** (for signaling status or errors)
 
 ## Team
+
+![Team Mates at Finals](./Images/f3d1b6b7-51be-4f62-a5cb-77070add3f34.jpg) 
 - **Thanupiriyan S.** (Team Leader)  
 - **Tharsan I.**  
 - **Bharkavasharama K.**
